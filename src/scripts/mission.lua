@@ -33,30 +33,31 @@ function customMissionReport(_code)
 
 	message = "Mission Report\n" .. "-------------------------------------\n" .. "\n" .. string.format("Mission: %s\n", customMission.missions[_code].name) .. string.format("%s\n", customMission.missions[_code].description) .. "\n" .. string.format("Progress: %d / %d\n", customMission.missions[_code].progress, customMission.missions[_code].maxSteps)
 
-	message = message .. "TEST\n"
+	if customMission.missions[_code].progress < customMission.missions[_code].maxSteps then
 
-	-- message = message .. "\n" .. string.format("Current task: %s", customMission.missions[_code].steps[customMission.missions[_code].progress].waypoint)
-	message = message .. "\n" .. string.format("Current task id: %d", customMission.missions[_code].progress)	
+		message = message .. "\n" .. string.format("Current task: %s", customMission.missions[_code].steps[customMission.missions[_code].progress+1].waypoint)
+
+	else
 	
+		message = message .. "\n" .. "Mission is finished !"
+		
+	end
+
     trigger.action.outText(message,10)
-
-	-- message = string.format("Current task: %s", customMission.missions[_code].steps[customMission.missions[_code].progress].waypoint)
-	
-    -- trigger.action.outText(message,10)
 
 end
 
 function markStepDone(_code)
 
-	-- message = "Congratulations !\n" .. "\n" .. string.format("Task: %s done\n", customMission.missions[_code].steps[customMission.missions[_code].progress].waypoint)
-	message = "Congratulations !\n" .. "\n" .. string.format("Task: %d done\n", customMission.missions[_code].progress)
+	message = "Congratulations !\n" .. "\n" .. string.format("Task: %s done\n", customMission.missions[_code].steps[customMission.missions[_code].progress+1].waypoint)
+	--message = "Congratulations !\n" .. "\n" .. string.format("Task: %d done\n", customMission.missions[_code].progress)
+
+	customMission.missions[_code].progress = customMission.missions[_code].progress + 1
 
 	if customMission.missions[_code].progress < customMission.missions[_code].maxSteps then
 
-		customMission.missions[_code].progress = customMission.missions[_code].progress + 1
-		-- message = message .. "\n" .. string.format("New task: %s", customMission.missions[_code].steps[customMission.missions[_code].progress].waypoint)
-		message = message .. "\n" .. string.format("New task: %d", customMission.missions[_code].progress)
-	
+		message = message .. "\n" .. string.format("New task: %s", customMission.missions[_code].steps[customMission.missions[_code].progress+1].waypoint)
+
 	else 
 
 		message = message .. "\n" .. string.format("Mission %s finished !", customMission.missions[_code].name)
