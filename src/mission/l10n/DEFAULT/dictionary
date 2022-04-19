@@ -1,10 +1,29 @@
 dictionary = {
+    ["DictKey_ActionRadioText_10"] = "Chypre Mission 01",
     ["DictKey_ActionText_10501"] = "return false -- scripts",
     ["DictKey_ActionText_10502"] = "return false -- config",
     ["DictKey_ActionText_10601"] = "return VEAF_DYNAMIC_PATH~=nil",
     ["DictKey_ActionText_10701"] = "return VEAF_DYNAMIC_PATH==nil",
     ["DictKey_ActionText_10801"] = "return VEAF_DYNAMIC_MISSIONPATH~=nil",
     ["DictKey_ActionText_10901"] = "return VEAF_DYNAMIC_MISSIONPATH==nil",
+    ["DictKey_ActionText_12"] = "Mission Status Report\
+------------------------------\
+\
+Chypre 01: n/a\
+\
+",
+    ["DictKey_ActionText_6"] = "Mission Chypre 01 - Roadblock 01 cleared\
+\
+Next objective: Pinarbashi Airport",
+    ["DictKey_ActionText_7"] = "Mission Chypre 01 - Pinarbashyu cleared\
+\
+Next objective: Roadblock02",
+    ["DictKey_ActionText_8"] = "Mission Chypre 01 - Roadblock02 cleared\
+\
+Next objective: FARP Thermeia",
+    ["DictKey_ActionText_9"] = "Mission Chypre 01 - FARP Thermeia cleared\
+\
+Chypre MISSION SUCCESS",
     ["DictKey_descriptionBlueTask_3"] = "",
     ["DictKey_descriptionNeutralsTask_4"] = "",
     ["DictKey_descriptionRedTask_2"] = "",
