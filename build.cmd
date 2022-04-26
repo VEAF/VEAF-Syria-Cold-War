@@ -139,19 +139,6 @@ rd /s /q .\build >nul 2>&1
 mkdir .\build >nul 2>&1
 
 echo.
-IF ["%NPM_UPDATE%"] == [""] GOTO DontNPM_UPDATE
-echo fetching the veaf-mission-creation-tools package
-if exist yarn.lock (
-	call yarn upgrade
-) else (
-	call yarn install
-)
-goto DoNPM_UPDATE
-:DontNPM_UPDATE
-echo skipping npm update
-:DoNPM_UPDATE
-
-echo.
 echo prepare the veaf-mission-creation-tools scripts
 rem -- copy the scripts folder
 xcopy /s /y /e %DYNAMIC_SCRIPTS_PATH%\src\scripts\* .\build\tempscripts\ >nul 2>&1

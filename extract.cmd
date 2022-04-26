@@ -99,19 +99,6 @@ set DYNAMIC_LOAD_SCRIPTS=false
 :DontDefineDefaultDYNAMIC_LOAD_SCRIPTS
 echo current value is "%DYNAMIC_LOAD_SCRIPTS%"
 
-echo.
-IF ["%NPM_UPDATE%"] == [""] GOTO DontNPM_UPDATE
-echo fetching the veaf-mission-creation-tools package
-if exist yarn.lock (
-	call yarn upgrade
-) else (
-	call yarn install
-)
-goto DoNPM_UPDATE
-:DontNPM_UPDATE
-echo skipping npm update
-:DoNPM_UPDATE
-
 rem extracting MIZ files
 echo extracting MIZ files
 set MISSION_PATH=%cd%\src\mission
