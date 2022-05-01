@@ -31,4 +31,5 @@ mapResource = {
     ["DictKey_ActionText_10330"] = "veafHoundElintHelper.lua",
     ["DictKey_ActionText_10401"] = "missionConfig.lua",
     ["ResKey_Action_15"] = "mission.lua",
+    ["ResKey_Action_24"] = "EWRS-BRAA.lua",
 } -- end of mapResource
