@@ -6,6 +6,10 @@ dictionary = {
     ["DictKey_ActionText_10801"] = "return VEAF_DYNAMIC_MISSIONPATH~=nil",
     ["DictKey_ActionText_10901"] = "return VEAF_DYNAMIC_MISSIONPATH==nil",
     ["DictKey_ActionText_13"] = "return VEAF_DYNAMIC_MISSIONPATH==nil",
+    ["DictKey_ActionText_22"] = "QRA From Al-Dumayr detected\
+ETA 5 minutes on Shayrat",
+    ["DictKey_ActionText_23"] = "QRA Detected from South (near Khalkhalah)\
+ETA 10 minutes on Shayrat",
     ["DictKey_descriptionBlueTask_3"] = "",
     ["DictKey_descriptionNeutralsTask_4"] = "",
     ["DictKey_descriptionRedTask_2"] = "",
