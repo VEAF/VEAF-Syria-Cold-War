@@ -115,6 +115,27 @@ customMission.addMission("redChypre01", "Chypre 01", "Destroy roadblocks between
 	}
 )
 
+customMission.addMission("redChypre02", "Chypre 02", "Destroy Radars and Fuel depots in VD96",
+	{
+		-- 1
+		{
+			waypoint = "Drop RED troops on VD96",
+		},
+		-- 2
+		{
+			waypoint = "Destroy RADARS on VD86 (South site)",
+		},
+		-- 3
+		{
+			waypoint = "Destroy the RADAR on VD86 (North site)",
+		},
+		-- 4
+		{
+			waypoint = "Destroy Fuel depots on VD86 (North site)",
+		},
+	}
+)
+
 customMission.addMission("redShayrat", "Shayrat", "Destroy Shayrat Warehouses and capture the airport,\nthen, defend from enemy CAP",
 	{
 		-- 1
