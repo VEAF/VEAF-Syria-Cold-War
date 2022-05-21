@@ -28,7 +28,7 @@
 	}, -- end of ["visibility"]
 	["wind"] = {
 			["at2000"] = {
-					["dir"] = 330,
+					["dir"] = 310,
 					["speed"] = 10.604474819794,
 			}, -- end of ["at2000"]
 			["at8000"] = {
@@ -36,7 +36,7 @@
 					["speed"] = 12.07985101455,
 			}, -- end of ["at8000"]
 			["atGround"] = {
-					["dir"] = 250,
+					["dir"] = 330,
 					["speed"] = 4.5,
 			}, -- end of ["atGround"]
 	}, -- end of ["wind"]
