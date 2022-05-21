@@ -136,11 +136,24 @@ customMission.addMission("redChypre02", "Chypre 02", "Destroy Radars and Fuel de
 	}
 )
 
+customMission.addMission("redChypre03", "Chypre 03", "EVAC VIP from Bank of Cyprus",
+	{
+		-- 1
+		{
+			waypoint = "Mi-8 pickup VIP on top of Bank of Cyprus",
+		},
+		-- 2
+		{
+			waypoint = "Drop VIP on Hosptial",
+		},
+	}
+)
+
 customMission.addMission("redShayrat", "Shayrat", "Destroy Shayrat Warehouses and capture the airport,\nthen, defend from enemy CAP",
 	{
 		-- 1
 		{
-			waypoint = "Destroy Shayrat Wharehouses",
+			waypoint = "Destroy Shayrat Chemical Factory",
 		},
 		-- 2
 		{
